@@ -1,0 +1,85 @@
+/* Fundo semi-transparente da modal */
+.react-confirm-alert-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+  }
+  
+  /* Container principal da modal */
+  .custom-confirm-alert {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    z-index: 1001;
+    margin: 100px auto;
+  }
+  
+  /* Título da modal */
+  .custom-confirm-alert h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Texto da modal */
+  .custom-confirm-alert p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+  
+  /* Container dos botões */
+  .custom-confirm-alert .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Estilo dos botões */
+  .custom-confirm-alert .buttons button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 100px;
+  }
+  
+  .custom-confirm-alert .buttons button:first-child {
+    background-color: #f44336;
+  }
+  
+  .custom-confirm-alert .buttons button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 480px) {
+    .custom-confirm-alert {
+      width: 80%;
+      padding: 20px 15px;
+    }
+  
+    .custom-confirm-alert h1 {
+      font-size: 20px;
+    }
+  
+    .custom-confirm-alert p {
+      font-size: 14px;
+    }
+  
+    .custom-confirm-alert .buttons button {
+      padding: 10px 20px;
+      font-size: 14px;
+      min-width: 80px;
+    }
+  }
+  

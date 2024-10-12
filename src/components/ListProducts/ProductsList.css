@@ -1,0 +1,497 @@
+/* Estilo geral para o corpo */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #666;
+}
+
+label input {
+  width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form button[type="submit"]{
+  background-color: #3e8e41;
+  color: #f9f9f9;
+  font-weight: bolder;
+  transition: 0.2s;
+}
+
+form button[type="reset"] {
+  background-color: #f44336;
+  margin-right: 0;
+  transition: 0.2s;
+  font-weight: bolder;
+  color: white;
+}
+
+form button:hover {
+  background-color: #45a049;
+  color: #f9f9f9;
+  font-weight: bold;
+}
+
+form button[type="reset"]:hover {
+  background-color: #e53935;
+  opacity: 0.9;
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+    margin: 10px;
+  }
+}
+
+/* ESTILIZAÇÃO DE BUTTONS DE FUNÇÃO DA TABELA */
+.button-functions-table {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  /* background-color: #333; */
+  /* height: 50px; */
+  border-radius: 8px;
+  background-color: #ffffff; /* Fundo branco para destacar a sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-functions-table button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #805400;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.button-functions-table button img {
+  width: 45px;
+  height: 45px;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+#img-pdf-imp{
+  /* width: 40px; */
+  cursor: pointer;
+}
+#imprimir{
+  /* margin-top: 25px; */
+  /* border: none; */
+  background: transparent;
+}
+
+.button-functions-table button:hover {
+  background-color: #e53935;
+  opacity: 0.9;
+}
+
+.button-functions-table button:hover img {
+  transform: scale(1.1);
+}
+
+.button-functions-table button:active {
+  background-color: #3e8e41;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .button-functions-table {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 15px;
+  }
+
+  .button-functions-table button {
+      padding: 12px;
+      font-size: 14px;
+  }
+
+  .button-functions-table button img {
+      width: 45px;
+      height: 45px;
+      margin-right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-functions-table {
+      align-items: center;
+  }
+
+  .button-functions-table button {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  .button-functions-table button img {
+      width: 45px;
+      height: 45px;
+  }
+}
+
+
+ /* ESTILOS DO MODAL */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="number"],
+.modal-content input[type="email"],
+.modal-content button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.modal-content button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .modal-content input[type="text"],
+  .modal-content input[type="number"],
+  .modal-content input[type="email"],
+  .modal-content button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-content {
+    padding: 10px;
+    max-width: 95%;
+  }
+
+  .modal-content input[type="text"],
+  .modal-content input[type="number"],
+  .modal-content input[type="email"],
+  .modal-content button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .close-button {
+    font-size: 24px;
+  }
+}
+
+.modal-content input:focus,
+.modal-content button:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.modal-content button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+
+/* ESTILIZAÇÃO DA TABELA */
+
+.section-table {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-height: 200px;
+  /* max-height: 300px; */
+}
+
+#table-to-print {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+#table-to-print thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#table-to-print th, #table-to-print td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+#table-to-print th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#table-to-print tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table-to-print tbody tr:hover {
+  background-color: #ddd;
+}
+
+#table-to-print td img.buttons-functions {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+#table-to-print td img.buttons-functions:hover {
+  transform: scale(1.2);
+}
+
+.functions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  #table-to-print th, #table-to-print td {
+    padding: 10px;
+  }
+
+  #table-to-print td img.buttons-functions {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 599px) and (min-width: 481px) {
+  #table-to-print {
+    min-width: 350px; /* Reduzir o tamanho mínimo da tabela para telas intermediárias */
+  }
+
+  #table-to-print th, #table-to-print td {
+    padding: 8px 10px; /* Ajustar o padding para telas menores */
+    font-size: 13px; /* Reduzir um pouco o tamanho da fonte */
+  }
+
+  #table-to-print td img.buttons-functions {
+    width: 18px; /* Ajustar o tamanho dos ícones */
+    height: 18px;
+  }
+
+  .section-table {
+    margin: 10px 0; /* Ajustar a margem para melhorar a visualização */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-table{
+    max-height: 100px;
+  }
+  #table-to-print{
+    min-width: 100px;
+  }
+  #table-to-print th, #table-to-print td {
+    padding: 6px 8px; /* Reduzir o padding para economizar espaço */
+    font-size: 10px; /* Reduzir o tamanho da fonte */
+  }
+
+  #table-to-print td img.buttons-functions {
+    width: 18px; /* Ajustar ainda mais o tamanho do ícone */
+    height: 18px;
+  }
+
+  .section-table {
+    margin: 5px 0; /* Reduzir a margem para economizar espaço */
+  }
+}
+
+@media (max-width: 370px){
+  .section-table{
+    max-height: 100px;
+  }
+  #table-to-print{
+      min-width: 80px;
+  }
+  #table-to-print th, #table-to-print td {
+    padding: 3px 4px; /* Reduzir o padding para economizar espaço */
+    font-size: 9px; /* Reduzir o tamanho da fonte */
+  }
+  #table-to-print td img.buttons-functions {
+    width: 16px; /* Ajustar ainda mais o tamanho do ícone */
+    height: 16px;
+  }
+}
+
+@media (max-width: 300px){
+  .section-table{
+    max-height: 100px;
+  }
+  #table-to-print{
+      min-width: 50px;
+  }
+  #table-to-print th, #table-to-print td {
+    padding: 3px 3px; /* Reduzir o padding para economizar espaço */
+    font-size: 8px; /* Reduzir o tamanho da fonte */
+  }
+  #table-to-print td img.buttons-functions {
+    width: 12px; /* Ajustar ainda mais o tamanho do ícone */
+    height: 12px;
+  }
+}
+
+@media (max-width: 260px){
+  .section-table{
+    max-height: 100px;
+  }
+  #table-to-print{
+      min-width: 40px;
+  }
+  #table-to-print th, #table-to-print td {
+    padding: 1,5px 2px; /* Reduzir o padding para economizar espaço */
+    font-size: 6px; /* Reduzir o tamanho da fonte */
+  }
+  #table-to-print td img.buttons-functions {
+    width: 10px; /* Ajustar ainda mais o tamanho do ícone */
+    height: 10px;
+  }
+}
+
+/* BUTTONS DE DOWNLOAD E UPLOAD */
+
+#button-download-json{
+  background-color: #4CAF50; /* Verde suave */
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#button-download-json:hover{
+  background-color: #45a049;
+}
+
+.button-functions-table input[type="file"] {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Cinza claro */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  /* width: 90%; */
+}
+
+.button-functions-table input[type="file"]:hover {
+  border-color: #45a049; /* Verde mais escuro no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #button-download-json, .button-functions-table input[type="file"] {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #button-download-json, .button-functions-table input[type="file"] {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+  }
+}
+
+#status-form{
+  text-align: center;
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,72 @@
+/* Estilização para o container da página */
+.construction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7; /* Cinza claro para o fundo */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Estilização para o conteúdo */
+  .construction-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* Título principal */
+  .construction-content h1 {
+    font-size: 2.5rem;
+    color: #333; /* Cinza escuro */
+    margin-bottom: 20px;
+  }
+  
+  /* Texto adicional */
+  .construction-content p {
+    font-size: 1.2rem;
+    color: #666; /* Cinza médio */
+    margin-bottom: 30px;
+  }
+  
+  /* Estilização para a imagem */
+  .construction-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .construction-content {
+      padding: 30px;
+    }
+  
+    .construction-content h1 {
+      font-size: 2rem;
+    }
+  
+    .construction-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .construction-content {
+      padding: 20px;
+    }
+  
+    .construction-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .construction-content p {
+      font-size: 0.9rem;
+    }
+  }
+  

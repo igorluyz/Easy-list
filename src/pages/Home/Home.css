@@ -1,0 +1,111 @@
+/* Estilização para o background da página */
+/* Estilização para a página */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container centralizado para os botões */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  /* Estilização do botão "Fazer lista de compras" */
+  .shopping-button {
+    background-color: #4CAF50; /* Verde suave */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .shopping-button:hover {
+    background-color: #45a049; /* Efeito ao passar o mouse */
+  }
+  
+  /* Estilização do botão "Página em desenvolvimento" */
+  .development-button {
+    background-color: #FFC107; /* Amarelo vibrante */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .development-button:hover {
+    background-color: #e6a700; /* Efeito ao passar o mouse */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .shopping-button,
+    .development-button {
+      width: 80%;
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .shopping-button,
+    .development-button {
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 12px;
+    }
+  }
+
+  .conference-button {
+    background-color: #0066cc; /* Azul moderado para representar confiança e profissionalismo */
+    color: white; /* Cor branca para o texto */
+    padding: 12px 24px; /* Espaçamento interno confortável */
+    border: none; /* Remover borda padrão */
+    border-radius: 8px; /* Borda arredondada para um design moderno */
+    font-size: 16px; /* Tamanho de fonte adequado para legibilidade */
+    font-weight: bold; /* Texto em negrito para destaque */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave ao mudar a cor */
+  }
+  
+  .conference-button:hover {
+    background-color: #004999; /* Cor mais escura ao passar o mouse */
+  }
+  
+  .conference-button:active {
+    background-color: #003366; /* Cor ainda mais escura ao clicar */
+  }
+  
+  .conference-button:focus {
+    outline: none; /* Remover outline padrão ao focar */
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.5); /* Adicionar uma sombra de foco */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 480px) {
+    .conference-button {
+      width: 100%; /* Tornar o botão em largura total em telas menores */
+      font-size: 14px; /* Reduzir o tamanho da fonte em telas pequenas */
+      padding: 10px 20px; /* Ajustar o padding para se adequar à largura */
+    }
+  }
+  

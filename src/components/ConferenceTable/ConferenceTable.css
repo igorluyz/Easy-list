@@ -1,0 +1,139 @@
+body{
+    background-color: aliceblue;
+}
+
+/* App.css */
+.striked td {
+    text-decoration: line-through;
+  }
+
+.section-table-conference{
+  width: 100%;
+  /* overflow-x: auto; */
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  /* max-height: 200px; */
+  }
+  #grife-button{
+    background: transparent;
+    border: none;
+  }
+  #grife{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    /* width: 18px; */
+    /* height: 18px; */
+    text-align: center;
+    transition: 0.3s;
+  }
+  #grife:hover{
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 480px){
+    #grife{
+        width: 15px;
+        height: 15px;
+    }
+  }
+
+  #input-conference {
+    display: block; /* Garante que o input seja exibido como um bloco */
+    width: 100%; /* Largura total do container */
+    max-width: 300px; /* Limita a largura máxima em telas maiores */
+    padding: 10px 15px; /* Espaçamento interno confortável */
+    font-size: 14px; /* Tamanho de fonte legível */
+    color: #333; /* Cor do texto para boa legibilidade */
+    background-color: #f9f9f9; /* Fundo claro para suavidade visual */
+    border: 2px solid #0066cc; /* Borda azul moderado para combinar com o tema da conferência */
+    border-radius: 8px; /* Borda arredondada para um design moderno */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para foco */
+  }
+  
+  #input-conference:hover {
+    border-color: #004999; /* Cor da borda mais escura ao passar o mouse */
+  }
+  
+  #input-conference:focus {
+    outline: none; /* Remover outline padrão ao focar */
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5); /* Sombra para indicar o foco */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 480px) {
+    #input-conference {
+      max-width: 100%; /* Remover limite de largura em telas menores */
+      font-size: 12px; /* Ajustar o tamanho da fonte para dispositivos pequenos */
+      padding: 8px 12px; /* Ajustar o padding para se adequar à largura */
+    }
+  }
+  
+.button-functions-table-conference{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  /* background-color: #333; */
+  /* height: 50px; */
+  border-radius: 8px;
+  background-color: #ffffff; /* Fundo branco para destacar a sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#reset-grif-items {
+  display: inline-block; /* Garante que o botão não ocupe a largura total */
+  padding: 10px 20px; /* Espaçamento interno confortável */
+  font-size: 16px; /* Tamanho de fonte legível */
+  font-weight: bold; /* Negrito para destacar o botão */
+  color: #ffffff; /* Cor do texto em branco para contraste */
+  background-color: #ff4d4d; /* Fundo vermelho claro para chamar a atenção */
+  border: none; /* Remove a borda padrão */
+  border-radius: 8px; /* Borda arredondada para um design moderno */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+#reset-grif-items:hover {
+  background-color: #e63939; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+#reset-grif-items:active {
+  background-color: #cc3333; /* Cor de fundo ainda mais escura ao clicar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ao clicar para feedback visual */
+}
+
+#reset-grif-items:focus {
+  outline: none; /* Remove o outline padrão */
+  box-shadow: 0 0 5px rgba(255, 77, 77, 0.5); /* Sombra de foco para destacar */
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  #reset-grif-items {
+    width: 100%; /* Largura total em dispositivos móveis */
+    font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+    padding: 12px; /* Ajusta o padding para se adequar à largura */
+  }
+}
+.button-print{
+  background: transparent;
+  border: none;
+}
+.button-functions-table-conference .button-print #print-conference {
+  width: 45px;
+  height: 45px;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  /* transform: scale(1.1); */
+}
+#print-conference:hover{
+  transform: scale(1.1);
+}
